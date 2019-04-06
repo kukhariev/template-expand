@@ -45,5 +45,5 @@ console.log(expand(template, config));
 
 [npm-image]: https://img.shields.io/npm/v/@dropb/expand.svg
 [npm-url]: https://www.npmjs.com/package/@dropb/expand
-[travis-image]: https://travis-ci.org/kukhariev/expand.svg?branch=master
-[travis-url]: https://travis-ci.org/kukhariev/expand
+[travis-image]: https://travis-ci.org/kukhariev/template-expand.svg?branch=master
+[travis-url]: https://travis-ci.org/kukhariev/template-expand
