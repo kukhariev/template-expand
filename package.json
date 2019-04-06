@@ -1,0 +1,47 @@
+{
+  "name": "@dropb/expand",
+  "version": "0.0.1",
+  "description": "Expand placeholders in a template string/strings",
+  "keywords": [
+    "template"
+  ],
+  "author": {
+    "name": "kukhariev",
+    "email": "q_h@inbox.ru"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kukhariev/expand.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "npm": ">= 5.8.0",
+    "node": ">= 8.0.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "npm run tslint && npm run clean && npm run build-ts",
+    "test": "mocha",
+    "test:watch": "mocha --watch",
+    "build-ts": "tsc",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "preversion": "npm run build",
+    "postversion": "git push --follow-tags"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.13.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "rimraf": "^2.6.3",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.15.0",
+    "typescript": "^3.4.1"
+  }
+}
