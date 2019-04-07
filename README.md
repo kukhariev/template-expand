@@ -18,8 +18,8 @@ npm install --save @dropb/expand
 const { expand } = require('@dropb/expand');
 
 const values = { one: 'One', two: 'Two', '3': 'Three', '4': 'Four', five: ['Five', 'Six'] };
-console.log(expand('{ one }...{ two }...{ 3 }...{ 4 }...{five[0]}', values));
-// One...Two...Three...Four
+console.log(expand('{one}...{two}...{3}...{ 4 }...{five[0]}', values));
+// One...Two...Three...Four...Five
 
 const { Template } = require('@dropb/expand');
 Template.sep = '${ }';

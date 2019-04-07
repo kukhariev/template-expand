@@ -8,13 +8,17 @@ export class Template {
    * @internal
    */
   private static _sep: string = '{|}';
+  /**
+   * Custom delimiters
+   *
+   */
   static set sep(value: string) {
     const [left, right] = value
       .trim()
       .split(/[\s?|\|]/, 2)
       .map(s => s.trim());
     if (!left || !right) {
-      throw new Error('Invalid Template.sep value\n');
+      throw new Error('Invalid Template.sep value');
     }
     Template.reg = new RegExp(`${escape(left)}([${escape(BASE)}]*)${escape(right)}`, 'g');
     Template._sep = value;
@@ -22,8 +26,13 @@ export class Template {
   static get sep() {
     return Template._sep;
   }
-
+  /**
+   * Expands placeholders in string
+   */
   static expand(template: string, values: { [key: string]: any }): string;
+  /**
+   * Expands placeholders in string[]
+   */
   static expand(template: string[], values: { [key: string]: any }): string[];
 
   static expand(template: string | string[], values: { [key: string]: any }) {
