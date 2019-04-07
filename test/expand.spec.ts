@@ -5,7 +5,7 @@ import { expand, Template } from '../src';
 const values = { $val: 'lav$', 'val-2': '2-lav', dot: { val: 'lav' }, arr: ['rra'] };
 describe('separator', () => {
   it('throw error', done => {
-    expect(() => (Template.sep = '{}')).to.throw('Invalid Template.sep value\n');
+    expect(() => (Template.sep = '{}')).to.throw('Invalid Template.sep value');
     done();
   });
   it('set/get', done => {
