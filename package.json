@@ -1,6 +1,6 @@
 {
   "name": "@dropb/expand",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "description": "Expand placeholders in a template string/strings",
   "keywords": [
     "template"
