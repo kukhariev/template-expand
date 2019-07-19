@@ -9,13 +9,9 @@
     "name": "kukhariev",
     "email": "q_h@inbox.ru"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kukhariev/template-expand.git"
-  },
+  "repository": "github:kukhariev/template-expand",
   "license": "MIT",
   "engines": {
-    "npm": ">= 5.8.0",
     "node": ">= 8.0.0"
   },
   "files": [
@@ -24,24 +20,20 @@
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
-    "clean": "rimraf lib",
-    "build": "npm run tslint && npm run clean && npm run build-ts",
+    "build": "rimraf dist && tsc",
     "test": "mocha",
     "test:watch": "mocha --watch",
-    "build-ts": "tsc",
-    "tslint": "tslint -c tslint.json -p tsconfig.json",
-    "preversion": "npm run build",
-    "postversion": "git push --follow-tags"
+    "tslint": "tslint -p tsconfig.json"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.7",
-    "@types/node": "^11.13.13",
+    "@types/node": "^12.6.8",
     "chai": "^4.2.0",
-    "mocha": "^6.1.4",
+    "mocha": "^6.2.0",
     "rimraf": "^2.6.3",
-    "ts-node": "^8.2.0",
-    "tslint": "^5.17.0",
-    "typescript": "^3.5.1"
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
   }
 }
