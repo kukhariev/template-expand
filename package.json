@@ -35,5 +35,12 @@
     "ts-node": "8.10.2",
     "tslint": "6.1.2",
     "typescript": "3.9.5"
+  },
+  "mocha": {
+    "extension": [
+      "ts"
+    ],
+    "spec": "src/**/*.spec.ts",
+    "require": "ts-node/register"
   }
 }
