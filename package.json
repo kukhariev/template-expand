@@ -27,10 +27,10 @@
   },
   "devDependencies": {
     "@types/chai": "4.2.14",
-    "@types/mocha": "8.0.2",
+    "@types/mocha": "8.0.4",
     "@types/node": "10.17.47",
     "chai": "4.2.0",
-    "mocha": "8.1.1",
+    "mocha": "8.2.1",
     "rimraf": "3.0.2",
     "ts-node": "9.0.0",
     "tslint": "6.1.3",
