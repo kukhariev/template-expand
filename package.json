@@ -29,7 +29,7 @@
     "@types/chai": "4.2.14",
     "@types/mocha": "8.2.0",
     "@types/node": "10.17.48",
-    "chai": "4.2.0",
+    "chai": "4.3.0",
     "mocha": "8.2.1",
     "rimraf": "3.0.2",
     "ts-node": "9.0.0",
